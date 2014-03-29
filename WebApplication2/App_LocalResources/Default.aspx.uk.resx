@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Attachement.Text" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="AuthorizedAttachment.Text" xml:space="preserve">
+    <value>Max 2 Mb. Allowed extensions:. jpg, jpeg, png, txt...</value>
+  </data>
+  <data name="ContactInfo.Text" xml:space="preserve">
+    <value>CONTACT INFORMATION</value>
+  </data>
+  <data name="ContactUs.Text" xml:space="preserve">
+    <value>Drop me a line!</value>
+  </data>
+  <data name="DrawCapcha.Text" xml:space="preserve">
+    <value>Draw the shape to send the form:</value>
+  </data>
+  <data name="Email.Text" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Home.Text" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="IPTelephony.Text" xml:space="preserve">
+    <value>IP telephony</value>
+  </data>
+  <data name="IPTelephonyAreaDesc.Text" xml:space="preserve">
+    <value>You want to call abroad at unbeatable prices, there are solutions!</value>
+  </data>
+  <data name="Material.Text" xml:space="preserve">
+    <value>IT Material</value>
+  </data>
+  <data name="MaterialAreaDesc.Text" xml:space="preserve">
+    <value>Looking for tips for equipment at the best prices (PC, tablet, SmartPhone ...).</value>
+  </data>
+  <data name="MaxCar.Text" xml:space="preserve">
+    <value>Max 2000 characters</value>
+  </data>
+  <data name="Message.Text" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MessageSent.Text" xml:space="preserve">
+    <value>Message sent, we will contact you as soon as possible!</value>
+  </data>
+  <data name="MyPhone.Text" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="Network.Text" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="NetworkAreaDesc.Text" xml:space="preserve">
+    <value>Installation and maintenance of computer equipment for professionals and home networking for individuals</value>
+  </data>
+  <data name="Security.Text" xml:space="preserve">
+    <value>Security</value>
+  </data>
+  <data name="SecurityAreaDesc.Text" xml:space="preserve">
+    <value>Installation of IP security cameras (inside and out) you where in your office.</value>
+  </data>
+  <data name="Send.Text" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Subject.Text" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="TextIntro.Text" xml:space="preserve">
+    <value>SPRC is an IT service company that you advises you to find the optimal solutions. We act in different IT areas like computer troubleshooting, website creation, implementation of network solutions but also IP phones to call cheaply.</value>
+  </data>
+  <data name="Troubleshooting.Text" xml:space="preserve">
+    <value>Troubleshooting</value>
+  </data>
+  <data name="TroubleshootingAreaDesc.Text" xml:space="preserve">
+    <value>You have a problem with your computer, based on a diagnosis, we will do our best to help you out (viruses, installation, backup, hardware &amp; software problem ...).</value>
+  </data>
+  <data name="WebSite.Text" xml:space="preserve">
+    <value>Web site</value>
+  </data>
+  <data name="WebSiteAreaDesc.Text" xml:space="preserve">
+    <value>You start a new activity, and of course you need an official website as well-functioning PC, tablet and mobile.</value>
+  </data>
+  <data name="YourEmail.Text" xml:space="preserve">
+    <value>Your e-mail</value>
+  </data>
+</root>

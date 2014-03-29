@@ -1,0 +1,196 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WebApplication2.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SPRC</title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+</head>
+<body>
+    <form runat="server" id="MyForm" action="#" method="post">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <%--                <asp:ScriptReference Name ="jquery.gmap.js"/>
+                <asp:ScriptReference Name ="custom.js"/>--%>
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Path="~/Scripts/jquery.gmap.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery-2.1.0.js" />
+                <asp:ScriptReference Path="~/Scripts/jquery.motionCaptcha.0.2.js" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" runat="server" href="~/">
+                        <img src="Images/logo.png" alt="" height="40" width="80" style="position:relative; top:-10px;" />
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="#home"><asp:localize runat="server" meta:resourcekey="Home"/></a></li>
+                        <li><a runat="server" href="#contact"><asp:localize runat="server" meta:resourcekey="Contact"/></a></li>
+                        <li><a runat="server" href="#home"><asp:localize runat="server" meta:resourcekey="References"/></a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes"><asp:localize runat="server" meta:resourcekey="Themes"/><span class="caret"></span></a>
+                            <ul class="dropdown-menu" aria-labelledby="themes">
+                                <li id="slate"><a href="#" data-theme="slate" class="theme-link">Slate</a></li>
+                                <li class="divider"></li>
+                                <li id="cerulean"><a href="#" data-theme="cerulean" class="theme-link">Cerulean</a></li>
+                                <li class="divider"></li>
+                                <li id="amelia"><a href="#" data-theme="amelia" class="theme-link">Amelia</a></li>
+                                <li class="divider"></li>
+                                <li id="Cosmo"><a href="#" data-theme="cosmo" class="theme-link">Cosmo</a></li>
+                                <li class="divider"></li>
+                                <li id="Cyborg"><a href="#" data-theme="cyborg" class="theme-link">Cyborg</a></li>
+                                <li class="divider"></li>
+                                <li id="Lumen"><a href="#" data-theme="lumen" class="theme-link">Lumen</a></li>
+                                <li class="divider"></li>
+                                <li id="Superhero"><a href="#" data-theme="superhero" class="theme-link">Superhero</a></li>
+                                <li class="divider"></li>
+                                <li id="United"><a href="#" data-theme="united" class="theme-link">United</a></li>
+
+                            </ul>
+                            
+
+                        </li>
+                        
+                        
+                       
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#"
+                                        class="dropdown-toggle"
+                                        data-toggle="dropdown">
+                                        <asp:localize runat="server" meta:resourcekey="Social"/>
+                                        <b class="caret"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li style="padding: 10px;"><!-- Place this tag where you want the +1 button to render -->
+                                        <g:plusone annotation="inline" width="150"></g:plusone>
+                                    </li>
+                                    <li style="padding: 10px;">
+                                        <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
+                                    </li>
+                                    <li style="padding: 10px;">
+                                        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+                                        <script>!function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "//platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");</script>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </ul>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><asp:localize runat="server" meta:resourcekey="Langague"/>
+                                    <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li id="FR"><a OnServerClick="frClick" runat="server"><img src="Images/FrenchFlag.jpg" width="25" height="15" />   Français</a></li>
+                                <li id="NL"><a OnServerClick="nlClick" runat="server"><img src="Images/DutchFlag.jpg" width="25" height="15" />   Nederlands</a></li>
+                                <li id="EN"><a OnServerClick="ukClick" runat="server"><img src="Images/UKFlag.png" width="25" height="18"/>   English</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <%--<asp:LoginView runat="server" ViewStateMode="Disabled">
+                        <AnonymousTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Register">Register</a></li>
+                                <li><a runat="server" href="~/Account/Login">Log in</a></li>
+                            </ul>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
+                                <li>
+                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
+                                </li>
+                            </ul>
+                        </LoggedInTemplate>
+                    </asp:LoginView>--%>
+                </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <div class="container">
+                <hr />
+                <footer>
+                    <%--<p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>--%>
+                </footer>
+
+            </div>
+        </div>
+    </form>
+
+    <script>
+        
+        (function () {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+        $(document).ready(function () {
+
+
+            $('#<%=this.ClientID%>').on('click', function (e) {
+                var themesheet = $('<link href="' + themes['default'] + '" rel="stylesheet" />');
+                themesheet.appendTo('head');
+                $('.theme-link').click(function () {
+                    var themeurl = themes[$(this).attr('data-theme')];
+                    themesheet.attr('href', themeurl);
+                })
+            })
+        });
+
+
+    </script>
+</body>
+
+
+
+
+</html>
+
+
